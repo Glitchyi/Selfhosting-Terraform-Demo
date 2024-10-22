@@ -1,25 +1,26 @@
-# DigitalOcean VM Provisioning with Terraform
+# Cloud Provider VM Provisioning with Terraform
 
-This project uses Terraform to provision Virtual Machines (VMs) on DigitalOcean. The VMs are created using SSH keys stored in a local file.
+This project uses Terraform to provision Virtual Machines (VMs) on any Cloud Provider. The VMs are created using SSH keys stored in a local file.
 
 ## Prerequisites
 
 - OpenTofu / Terraform installed
-- DigitalOcean API Token
+- Cloud Provider API Token
 - SSH keys
 
 ## Setup
 
 1. Clone this repository.
-2. Create a `.env` file in the root directory of the project and simply add your DigitalOcean API token:
+2. Create a `.env` file in the root directory of the project and simply add your Cloud Provider API token:
 
     ```text
-    <Your DigitalOcean API Token>
+    <Your Cloud Provider API Token>
     ```
 
 3. Add your SSH keys to a file named `ssh_keys.txt` in the root directory of the project. Each SSH key should be on a new line.
 
-Guide to create an SSH key [here](https://docs.github.com/en/authentication/connecting-to-github-with-ssh/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent)
+> [!TIP] 
+> Guide to create an SSH key [here](https://docs.github.com/en/authentication/connecting-to-github-with-ssh/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent)
 
 ## Usage
 
