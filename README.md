@@ -19,6 +19,8 @@ This project uses Terraform to provision Virtual Machines (VMs) on DigitalOcean.
 
 3. Add your SSH keys to a file named `ssh_keys.txt` in the root directory of the project. Each SSH key should be on a new line.
 
+Guide to create an SSH key [here](https://docs.github.com/en/authentication/connecting-to-github-with-ssh/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent)
+
 ## Usage
 
 To provision the VMs, run the following command(s):
