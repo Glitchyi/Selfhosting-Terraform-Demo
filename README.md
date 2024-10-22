@@ -20,7 +20,8 @@ This project uses Terraform to provision Virtual Machines (VMs) on any Cloud Pro
 3. Add your SSH keys to a file named `ssh_keys.txt` in the root directory of the project. Each SSH key should be on a new line.
 
 > [!TIP] 
-> Guide to create an SSH key [here](https://docs.github.com/en/authentication/connecting-to-github-with-ssh/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent)
+> - Guide to create an SSH key [here](https://docs.github.com/en/authentication/connecting-to-github-with-ssh/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent)
+> - To install [OpenTofu](https://opentofu.org/docs/intro/install/) or [Terraform](https://developer.hashicorp.com/terraform/install) follow these offical documentation.
 
 ## Usage
 
