@@ -9,7 +9,7 @@ terraform {
 
 
 provider "digitalocean" {
-  token = file(".env")
+  token = trimspace(file(".env"))
 }
 
 data "local_file" "ssh_keys" {
@@ -21,7 +21,7 @@ locals {
 }
 
 resource "digitalocean_droplet" "web" {
-  count              = length(local.ssh_keys)
+  count              = length(local.ssh_keys) - 1
   name               = "vm-${count.index + 1}"
   region             = "blr1"  # Replace with your desired region
   size               = "s-1vcpu-1gb"
@@ -31,7 +31,7 @@ resource "digitalocean_droplet" "web" {
 
 # Create DigitalOcean SSH keys from the keys read from the file
 resource "digitalocean_ssh_key" "ssh_key" {
-  count       = length(local.ssh_keys)
+  count       = length(local.ssh_keys) - 1
   name        = "ssh-key-${count.index + 1}"
   public_key  = local.ssh_keys[count.index]
 }
