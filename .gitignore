@@ -1,3 +1,8 @@
 .env
 ssh_keys.txt
-*terraform*
+terraform.tfvars
+*.tfstate
+*.tfstate.*
+.terraform/
+*.json
+*.lock.hcl

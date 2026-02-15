@@ -1,0 +1,20 @@
+# Choose cloud provider: "digitalocean" or "gcp"
+# cloud_provider = "digitalocean"
+
+# --- DigitalOcean (used when cloud_provider = "digitalocean") ---
+# Token: use .env file or TF_VAR_digitalocean_token (do not put token here)
+# region        = "blr1"
+# droplet_size   = "s-1vcpu-1gb"
+# droplet_image = "ubuntu-24-04-x64"
+
+# --- GCP (used when cloud_provider = "gcp") ---
+# cloud_provider   = "gcp"
+# gcp_project_id   = "your-gcp-project-id"
+# gcp_zone         = "us-central1-a"
+# gcp_zones        = ["asia-south1-b", "asia-south1-c"]  # Spread VMs across zones; use when one zone has no capacity
+# gcp_machine_type = "e2-micro"
+# gcp_image        = "ubuntu-os-cloud/ubuntu-2204-lts"
+# gcp_credentials_file = ""  # Leave empty to use Application Default Credentials
+
+# --- Shared ---
+# ssh_key_file = "ssh_keys.txt"
